@@ -14,11 +14,11 @@ use Nette\Forms\Controls\TextInput;
 use Nette\Forms\Form;
 
 
-class EmailInput extends TextInput
+class EmailStrictInput extends TextInput
 {
 	const VALIDATE_EMAIL = [__CLASS__, 'validateEmail'];
 
-	public static function addValidatedEmail(Container $container, $name, $label, $errorMessage = 'Bad email address!')
+	public static function addEmailStrict(Container $container, $name, $label, $errorMessage = 'Invalid email address.')
 	{
 		$component = (new TextInput($label))
 			->setRequired(false)
@@ -40,7 +40,7 @@ class EmailInput extends TextInput
 
 	public static function register()
 	{
-		Form::extensionMethod('addValidatedEmail', [__CLASS__, 'addValidatedEmail']);
-		Container::extensionMethod('addValidatedEmail', [__CLASS__, 'addValidatedEmail']);
+		Form::extensionMethod('addEmailStrict', [__CLASS__, 'addEmailStrict']);
+		Container::extensionMethod('addEmailStrict', [__CLASS__, 'addEmailStrict']);
 	}
 }
