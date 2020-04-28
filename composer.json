@@ -1,14 +1,5 @@
 {
-    "version": "1.0.0",
-    "name": "adt/nette-forms-email",
-    "type": "library",
-    "authors": [
-        {
-            "name": "Vladimír Paloušek",
-            "email": "vlada@appsdevteam.com"
-        }
-    ],
-    "minimum-stability": "stable",
+    "name": "adt/nette-forms-email-strict",
     "require": {
         "egulias/email-validator": "^2.1",
         "nette/nette": "^3.0"
