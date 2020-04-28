@@ -18,7 +18,7 @@ class EmailStrictInput extends TextInput
 {
 	const VALIDATE_EMAIL = [__CLASS__, 'validateEmail'];
 
-	public static function addEmailStrict(Container $container, $name, $label, $errorMessage = 'Invalid email address.')
+	public static function addEmailStrict(Container $container, $name, $label = null, $errorMessage = 'Invalid email address.')
 	{
 		$component = (new TextInput($label))
 			->setRequired(false)
