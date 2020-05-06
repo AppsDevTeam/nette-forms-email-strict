@@ -2,7 +2,7 @@
     "name": "adt/nette-forms-email-strict",
     "require": {
         "egulias/email-validator": "^2.1",
-        "nette/nette": "^3.0"
+        "nette/forms": "^2.4 | ^3.0"
     },
     "autoload": {
         "psr-4": {
