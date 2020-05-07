@@ -25,6 +25,7 @@ class EmailStrictInput extends TextInput
 			->addRule(Form::EMAIL, $errorMessage)
 			->addRule(EmailStrictInput::VALIDATE_EMAIL, $errorMessage);
 		$container->addComponent($component, $name);
+		return $component;
 	}
 
 	public static function validateEmail(TextInput $control)
