@@ -22,8 +22,13 @@ class EmailStrictInput extends TextInput
 	{
 		$component = (new TextInput($label))
 			->setRequired(false)
-			->addRule(Form::EMAIL, $errorMessage)
 			->addRule(EmailStrictInput::VALIDATE_EMAIL, $errorMessage);
+
+		$component
+			->addCondition(Form::FILLED)
+			->addRule(Form::EMAIL, $errorMessage)
+			->endCondition();
+
 		$container->addComponent($component, $name);
 		return $component;
 	}
