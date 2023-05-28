@@ -2,7 +2,7 @@
     "name": "adt/nette-forms-email-strict",
     "require": {
         "ext-intl": "*",
-        "egulias/email-validator": "^3.1",
+        "egulias/email-validator": "^3.1 | ^4.0",
         "nette/forms": "^2.4 | ^3.0"
     },
     "autoload": {
