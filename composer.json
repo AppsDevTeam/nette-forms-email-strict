@@ -1,5 +1,6 @@
 {
     "name": "adt/nette-forms-email-strict",
+    "license": "MIT",
     "require": {
         "ext-intl": "*",
         "egulias/email-validator": "^3.1 | ^4.0",
